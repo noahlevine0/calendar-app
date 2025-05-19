@@ -1,0 +1,13 @@
+Hey! Is this meant to be text?? Or code here? I'm still trying to figure all of this out. The text color is red so this looks like some code editor but whatever.
+
+5/19/25 
+Had the genius idea to finally improve my organization. Being an ambitious coder, I knew i'd never succumb to the mundanity of Google Calendar. Here's my own spin on a calendar app
+Since I hate setting plans, but need to stay organized and on top of things, hopefully this calendar app will help me get my stuff together
+
+Functionality: 1. Monthly, weekly, and daily view 2. "Tasks" and "Events" - Tasks are things you have to do (work, eat dinner, go to gym, etc...), and Events are places you have to be
+(zoom meeting, class, club meeting, etc...) 3. Option to bring up "To do list" that has a list of all tasks, due dates, and option to mark as completed 4. Handling recurring task/event
+
+More might come, as of right now considering algorithm for work tasks? Maybe doing greedy based on the due date? Calculated bedtime and wakeup time to optimize x hours of sleep, maybe
+some sort of organizational homework features? I'm super excited to tackle this though, hopefully I don't lose motivation in a few days. As of rn, my plan is just to get something to
+work, and then i'll add a lot more functionality from there.
+
