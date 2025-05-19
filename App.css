@@ -20,5 +20,134 @@ body {
   line-height: 1.6;
 }
 
+/* ====================== */
 /* Layout Containers */
-/* TODO */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  /* TODO: Style Header */
+  padding: 1rem;
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-content {
+  /* TODO: Style content area */
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* ====================== */
+/* Header Components */
+.view-controls, .date-controls {
+  /* TODO: Style control buttons */
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  /* TODO: Style buttons */
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active {
+  /* TODO: Style active button */
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ====================== */
+/* Side Panel */
+.side-panel {
+  /* TODO: Style side panel */
+  width: 300px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.tasks-panel, .sleep-panel {
+  /* TODO: Style panels */
+  margin-bottom: 2rem;
+}
+
+.task-list {
+  /* TODO: Style task list */
+  margin: 1rem 0;
+}
+
+.task-item {
+  /* TODO: Style task items */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+.add-task-btn {
+  /* TODO: Style add task button */
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+/* ====================== */
+/* Calendar Container */
+.calendar-container {
+  /* TODO: Style calendar container */
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* ====================== */
+/* Day View */
+.day-view {
+  /* TODO: Style day view*/
+}
+/* ====================== */
+/* Week View */
+.week-view {
+  /* TODO: Style week view */
+}
+/* ====================== */
+/* Month View */
+.month-view {
+  /* TODO: Style month view */
+}
+/* ====================== */
+/* More Design */
+@media (max-width: 768px) {
+  /* TODO: Add responsive styles for smaller screens */
+  .app-content {
+    flex-direction: column;
+  }
+  .side-panel {
+    width: 100%;
+  }
+}
+/* ====================== */
+/* TODO: Dragging and Dropping functionality */
+/* NOTE: Subject to Change */
+.dragging {
+  opacity: 0.5; 
+}
+.drop-target {
+  background-color: var(--super-light-gray);
+}
+
