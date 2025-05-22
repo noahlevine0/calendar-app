@@ -29,13 +29,14 @@ body {
 }
 
 .app-header {
-  /* TODO: Style Header */
   padding: 1rem;
   background-color: white;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
 }
 
 .app-content {
@@ -49,24 +50,35 @@ body {
 /* ====================== */
 /* Header Components */
 .view-controls, .date-controls {
-  /* TODO: Style control buttons */
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 button {
-  /* TODO: Style buttons */
   padding: 0.5rem 1rem;
   background: white;
   border: 1px solid var(--border-color);
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+button:hover {
+  background-color: var(--super-light-gray);
+  border-color: #ccc;
 }
 
 button.active {
-  /* TODO: Style active button */
   background-color: var(--primary-color);
   color: white;
+  border-color: var(--primary-color);
+}
+
+.current-date {
+  font-weight: 500;
+  margin-left: 1rem;
+  font-size: 1.1rem;
 }
 
 /* ====================== */
@@ -136,9 +148,14 @@ button.active {
   /* TODO: Add responsive styles for smaller screens */
   .app-content {
     flex-direction: column;
+    height: auto;
+    overflow: visible;
   }
   .side-panel {
     width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+    max-height: 300px;
   }
 }
 /* ====================== */
